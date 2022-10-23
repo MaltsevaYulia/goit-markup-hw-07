@@ -1,0 +1,67 @@
+/* Преимущества */
+.advantage {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+  
+  .advantage .list {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .advantage .item {
+    max-width: 270px;
+  }
+  
+  .advantage .item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background: #f5f4fa;
+    background-position: center;
+    background-size: contain;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .advantage .item:nth-child(1)::before {
+    background-image: url(..//images/advantage1.svg);
+  }
+  
+  .advantage .item:nth-child(2)::before {
+    background-image: url(..//images/advantage2.svg);
+  }
+  
+  .advantage .item:nth-child(3)::before {
+    background-image: url(..//images/advantage3.svg);
+  }
+  
+  .advantage .item:nth-child(4)::before {
+    background-image: url(..//images/advantage4.svg);
+  }
+  
+  .advantage-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    margin-bottom: 10px;
+  }
+  
+  .advantage-text {
+    line-height: 1.71;
+    color: $text-color;
+  }
