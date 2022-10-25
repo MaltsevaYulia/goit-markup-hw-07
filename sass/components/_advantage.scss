@@ -24,6 +24,15 @@
     border-radius: 4px;
     margin-bottom: 30px;
   }
+
+    // @each $animal in dog,
+    // cat,
+    // bird,
+    // turtle {
+    //   .#{$animal}-icon {
+    //     background-image: url('../images/#{$animal}.png');
+    //   }
+    // }
   
   .advantage__item:nth-child(1)::before {
     background-image: url(..//images/advantage1.svg);

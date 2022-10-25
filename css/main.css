@@ -302,13 +302,13 @@ button {
   padding-top: 0;
 }
 
-.activity .list {
+.activity__list {
   display: flex;
   gap: 30px;
   position: relative;
 }
 
-.activity-text {
+.activity__text {
   position: absolute;
   display: flex;
   align-items: center;
