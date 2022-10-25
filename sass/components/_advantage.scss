@@ -25,14 +25,13 @@
     margin-bottom: 30px;
   }
 
-    // @each $animal in dog,
-    // cat,
-    // bird,
-    // turtle {
-    //   .#{$animal}-icon {
-    //     background-image: url('../images/#{$animal}.png');
-    //   }
-    // }
+//   @each $advantage in advantage1, advantage2, advantage3, advantage4 {
+//   .advantage__item:nth-child(n+1)::before {
+//     background-image: url('../images/#{$advantage}.svg');
+//   }
+// }
+
+
   
   .advantage__item:nth-child(1)::before {
     background-image: url(..//images/advantage1.svg);
