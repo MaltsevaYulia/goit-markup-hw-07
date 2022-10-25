@@ -1,23 +1,21 @@
+/* Hero */
 .hero {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-
   padding-top: 200px;
   padding-bottom: 200px;
-
-  background: var(--page-background);
+  background: $page-background;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   margin-right: auto;
   margin-left: auto;
   font-weight: 900;
@@ -26,11 +24,11 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   margin-bottom: 30px;
   max-width: 696px;
 }
-.hero-btn {
+.hero__btn {
   margin-right: auto;
   margin-left: auto;
   font-family: inherit;
@@ -41,17 +39,18 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  background: var(--accent-color);
+  color: $primary-white-color;
+  background: $accent-color;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-style: none;
   padding: 10px 32px;
-  transition: background-color 250ms var(--cubic-bezier);
+  transition: background-color 250ms $cubic-bezier;
+  &:hover,
+  &:focus {
+    background-color: $background-button;
+  }
 }
+  
 
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--background-button);
-}
