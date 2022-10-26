@@ -1,5 +1,16 @@
+/* Header */
 .header {
     border-bottom: 1px solid #ececec;
+    &-navigation {
+        margin-left: 93px;
+      }
+    &-nav {
+      display: flex;
+    }
+    &-icon {
+      margin-right: 10px;
+      fill: currentColor;
+    }
   }
   
   .main-nav {
@@ -13,17 +24,9 @@
     font-size: 26px;
     line-height: 1.19;
     color: $accent-color;
-  }
-  .logo-part {
-    color: $logo-part-color;
-  }
-  
-  .header-navigation {
-    margin-left: 93px;
-  }
-  
-  .header-nav {
-    display: flex;
+    &-part {
+        color: $logo-part-color;
+      }
   }
   
   .nav-link {
@@ -37,65 +40,62 @@
     letter-spacing: 0.02em;
     color: $primary-text-color;
     transition: color 250ms $cubic-bezier;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
   
   .header-nav .item + .item {
     margin-left: 50px;
   }
   
-  .nav-link:hover,
-  .nav-link:focus {
-    color: $accent-color;
-  }
   
-  .header-contact .link {
-    transition: color 250ms $cubic-bezier;
-  }
-  
-  .header-contact .link:hover,
-  .header-contact .link:focus {
-    color: $accent-color;
-  }
   
   .current {
     color: $accent-color;
     position: relative;
-  }
-  
-  .current::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 4px;
-    left: 0;
-    bottom: 0;
-    background: #2196f3;
-    border-radius: 2px;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: 0;
+        background: #2196f3;
+        border-radius: 2px;
+      }
   }
   
   .header-contact {
     display: flex;
     align-items: center;
     margin-left: auto;
+    & .link {
+        display: flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $text-color;
+        align-items: center;
+        transition: color 250ms $cubic-bezier;
+      }
+    & .item+.item {
+      margin-left: 50px;
+    }
+    & .link:hover,
+    & .link:focus {
+      color: $accent-color;
+    }
   }
   
-  .header-contact .item + .item {
-    margin-left: 50px;
-  }
   
-  .header-contact .link {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $text-color;
-    align-items: center;
-  }
   
-  .header-icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
+  
+
+    
+  
+  

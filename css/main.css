@@ -75,8 +75,19 @@ button {
   margin: -1px;
 }
 
+/* Header */
 .header {
   border-bottom: 1px solid #ececec;
+}
+.header-navigation {
+  margin-left: 93px;
+}
+.header-nav {
+  display: flex;
+}
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .main-nav {
@@ -91,17 +102,8 @@ button {
   line-height: 1.19;
   color: #2196f3;
 }
-
 .logo-part {
   color: #000000;
-}
-
-.header-navigation {
-  margin-left: 93px;
-}
-
-.header-nav {
-  display: flex;
 }
 
 .nav-link {
@@ -116,30 +118,18 @@ button {
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.nav-link:hover, .nav-link:focus {
+  color: #2196f3;
+}
 
 .header-nav .item + .item {
   margin-left: 50px;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #2196f3;
-}
-
-.header-contact .link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contact .link:hover,
-.header-contact .link:focus {
-  color: #2196f3;
 }
 
 .current {
   color: #2196f3;
   position: relative;
 }
-
 .current::after {
   position: absolute;
   content: "";
@@ -156,11 +146,6 @@ button {
   align-items: center;
   margin-left: auto;
 }
-
-.header-contact .item + .item {
-  margin-left: 50px;
-}
-
 .header-contact .link {
   display: flex;
   padding-top: 32px;
@@ -171,11 +156,13 @@ button {
   letter-spacing: 0.02em;
   color: #757575;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-icon {
-  margin-right: 10px;
-  fill: currentColor;
+.header-contact .item + .item {
+  margin-left: 50px;
+}
+.header-contact .link:hover, .header-contact .link:focus {
+  color: #2196f3;
 }
 
 /* Hero */
@@ -193,7 +180,6 @@ button {
   background-size: cover;
   text-align: center;
 }
-
 .hero__title {
   margin-right: auto;
   margin-left: auto;
@@ -246,14 +232,24 @@ button {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .advantage__list {
   display: flex;
   gap: 30px;
 }
-
 .advantage__item {
   max-width: 270px;
+}
+.advantage__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 10px;
+}
+.advantage__text {
+  line-height: 1.71;
+  color: #757575;
 }
 
 .advantage__item::before {
@@ -268,46 +264,30 @@ button {
 }
 
 .advantage__item:nth-child(1)::before {
-  background-image: url(..//images/advantage1.svg);
+  background-image: url("../images/advantage1.svg");
 }
 
 .advantage__item:nth-child(2)::before {
-  background-image: url(..//images/advantage2.svg);
+  background-image: url("../images/advantage2.svg");
 }
 
 .advantage__item:nth-child(3)::before {
-  background-image: url(..//images/advantage3.svg);
+  background-image: url("../images/advantage3.svg");
 }
 
 .advantage__item:nth-child(4)::before {
-  background-image: url(..//images/advantage4.svg);
-}
-
-.advantage__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: #212121;
-  margin-bottom: 10px;
-}
-
-.advantage__text {
-  line-height: 1.71;
-  color: #757575;
+  background-image: url("../images/advantage4.svg");
 }
 
 /* Чим ми займаємось */
 .activity {
   padding-top: 0;
 }
-
 .activity__list {
   display: flex;
   gap: 30px;
   position: relative;
 }
-
 .activity__text {
   position: absolute;
   display: flex;
@@ -398,18 +378,18 @@ button {
 }
 
 /* Постійні клієнти */
-.client-list {
+.client__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.client-item {
+.client__item {
   width: 170px;
   height: 92px;
 }
 
-.client-link {
+.client__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -420,15 +400,13 @@ button {
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.client-icon {
-  fill: currentColor;
-}
-
-.client-link:hover,
-.client-link:focus {
+.client__link:hover, .client__link:focus {
   color: #2196f3;
   border: 1px solid #2196f3;
+}
+
+.client__icon {
+  fill: currentColor;
 }
 
 /* Футер */
