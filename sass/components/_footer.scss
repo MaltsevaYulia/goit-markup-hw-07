@@ -3,92 +3,89 @@
     background: $page-background;
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-  
-  .footer-logo-part {
-    color: $primary-white-color;
-  }
-  
-  .footer-addres {
-    margin-top: 20px;
-  }
-  
-  .footer-list a {
+      &-logo-part {
+        color: $primary-white-color;
+      }
+    
+      &-addres {
+        margin-top: 20px;
+      }
+      &-link {
     transition: color 250ms $cubic-bezier;
   }
   
-  .footer-list a:hover,
-  .footer-list a:focus {
+  &-link:hover,
+  &-link:focus {
     color: $accent-color;
   }
   
-  .footer-adress {
+  &-adress {
     font-family: inherit;
     line-height: 1.71;
     color: $primary-white-color;
   }
   
-  .footer-item:not(:last-child) {
+  &-item:not(:last-child) {
     margin-bottom: 9px;
   }
   
-  .footer-mail,
-  .footer-tel {
+  &-mail,
+  &-tel {
     font-family: inherit;
     font-style: normal;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
   }
   
-  .footer-container {
+  &-container {
     display: flex;
     align-items: baseline;
+  }
+    &-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $primary-white-color;
+      margin-bottom: 20px;
+    }
+        &-soc-icon {
+          fill: currentColor;
+        }
+
   }
   
   .join {
     margin-left: 70px;
+    &-list {
+        display: flex;
+        gap: 10px;
+      }
+    
+      &-item {
+        width: 44px;
+        height: 44px;
+      }
+    
+      &-link {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        color: $primary-white-color;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms $cubic-bezier;
+      }
+    
+      &-link:hover,
+      &-link:focus {
+        background-color: $accent-color;
+      }
   }
-  
-  .footer-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $primary-white-color;
-    margin-bottom: 20px;
-  }
-  
-  .join-list {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .join-item {
-    width: 44px;
-    height: 44px;
-  }
-  
-  .join-link {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    color: $primary-white-color;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 250ms $cubic-bezier;
-  }
-  
-  .footer-soc-icon {
-    fill: currentColor;
-  }
-  
-  .join-link:hover,
-  .join-link:focus {
-    background-color: $accent-color;
-  }
+
   
   .form-mail {
     margin-left: auto;
@@ -131,9 +128,11 @@
     color: $primary-white-color;
     margin-left: 12px;
     transition: background-color 250ms $cubic-bezier;
+    &:hover,
+    &:focus {
+      border-color: #188ce8;
+    }
+
   }
   
-  .form-mail-btn:hover,
-  .form-mail-btn:focus {
-    border-color: #188ce8;
-  }
+  
